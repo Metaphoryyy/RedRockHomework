@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易云音乐</title>
+    <style type="text/css">
+          * {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            text-decoration: none;
+            list-style: none;
+        }
+        .header {
+            background-color: rgb(47, 46, 46);
+            height: 60px;
+            width: 100%;
+            font-size: 20px;
+        }
+        .header1 {
+            height: 40px;
+            width: 50px;
+            font-size: 15px;
+
+        }
+        .header2 {
+            height: 40px;
+            width: 30px;
+            font-size: 15px;
+
+        }
+        .header3 {
+            height: 30px;
+            width: 100%;
+            background-color: red;
+            font-size: 15px;
+
+
+        }
+        .header4 {
+            height: 30px;
+            width: 50px;
+            font-size: 15px;
+            
+        }
+        .header5 {
+            height: 35px;
+            width: 40%;
+            background-color: white;
+            font-size: 15px;
+        }
+        .header6 {
+            height: 35px;
+            width: 30px;
+        }
+        body {
+             background-color: #e5edf1;
+         }
+
+         .box1 {
+             position: absolute;
+             left: 50%;
+             top: 50%;
+             transform: translate(-50%, -50%);
+             width: 1000px;
+             height: 600px;
+             overflow: hidden;
+         }
+
+         .list {
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 4800px;
+             height: 540px;
+         }
+
+         .list li {
+             float: left;
+             width: 1000px;
+             height: 600px;
+             animation: move 13s infinite linear;
+         }
+
+         @keyframes move {
+
+             0% {
+                 transform: translateX(0px);
+
+             }
+
+             11% {
+                 transform: translateX(-1000px);
+
+             }
+
+             22% {
+                 transform: translateX(-1000px);
+             }
+
+             44% {
+                 transform: translateX(-2000px);
+
+             }
+
+             55% {
+                 transform: translateX(-2000px);
+             }
+
+             66% {
+                 transform: translateX(-3000px);
+
+             }
+
+             77% {
+                 transform: translateX(-3000px);
+             }
+
+             88% {
+                 transform: translateX(-4000px);
+
+             }
+
+             100% {
+                 transform: translateX(-4000px);
+             }
+         }
+
+         img {
+             width: 100%;
+             height: 100%;
+         }
+         .picture {
+            height: 120px;
+            width: 100%;
+         }
+         .box {
+            position: relative;
+            display: flex;
+            margin-top: 100px;
+            margin-left: 50%;
+            border: 1px solid black;
+            width: 500px;
+            height: 300px;
+            transform: translateX(-50%);
+         }
+         .box::after{
+            position: absolute;
+            z-index: -1;
+            top: 60px;
+            right: 0;
+            content: '';
+            border-bottom: 1px dashed red;
+            height: 0;
+            width: 100%;
+         }
+         .box::before{
+           position: absolute;
+           z-index: 0;
+           top: 0;
+           right: 60px;
+           content: '';
+           border-right: 1px dashed blue;
+           height: 100%;
+           width: 0;
+         }
+         .item {
+           margin: 10px;
+           width: 80px;
+           height: 80px;
+           color: #fff;
+           text-align: center;
+           line-height: 80px;
+         }
+         img {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            height: 50%;
+
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="header">
+    <img src="/照片/网易云图标.png">
+    <span class="header1"><a herf="" target="_parent">发现音乐</a></span>
+       
+    <span class="header1">我的音乐</span>   
+        
+    <span class="header1">关注</span>   
+        
+    <span class="header1">商场</span>  
+        
+    <span class="header1">音乐人</span>
+
+    <span class="header1">下载客户端</span>
+
+    <span class="header2">登陆</span>
+
+    </div>
+    <div class="header3">
+    <span class="header4">推荐</span>
+    <span class="header4">排行榜</span>
+    <span class="header4">歌单</span>
+    <span class="header4">主播电台</span>
+    <span class="header4">歌手</span>
+    <span class="header4">新歌上架</span>
+    </div>
+<div class="picture"> </div>
+   
+    <div class="box">
+        <ul class="list">
+            <li> <img src="轮播图片"></li>
+            <li> <img src="轮播图片"></li>
+            <li> <img src="轮播图片"></li>
+            <li> <img src="轮播图片"></li>
+            <li> <img src="轮播图片"></li>
+        </ul>
+    </div>
+</div>
+<div class="heaser5">
+    <soan class="header6", font-size="40px">热门推荐</soan>
+    <span class="header6">华语</span>
+    <span class="header6">流行</span>
+    <span class="header6">摇滚</span>
+    <span class="header6">民谣</span>
+    <span class="header6">电子</span>
+</div>
+<div class="box">
+    <div class="item" img src="">1</div>
+    <div class="item" img src="">2</div>
+    <div class="item" ing src="">3</div>
+</div>
+</body>
+</html>
